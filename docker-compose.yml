@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  crawler:
+    container_name: argyle
+    build: .
+    volumes:
+      - .:/usr/src/app
+
