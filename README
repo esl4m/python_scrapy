@@ -17,8 +17,13 @@ So that I can quickly identify if the new features or the bug fixing changes int
 ### To run the app on docker:
 - Clone the repo to your local
 - cd into folder.
-- Run the following command `docker-compose up --build -d`
-- To check the status of the running containers, run the following command `docker ps -a`
-- To get inside the docker container using this: `docker exec -u 0 -it Container_ID bash`
+- Run the following command:
+`docker-compose up --build -d`
 
+- To check the status of the running containers, run the following command:
+`docker ps -a`
 
+- To get inside the docker container using this: 
+`docker exec -u 0 -it Container_ID bash`
+
+### To do add tests ..
