@@ -5,5 +5,4 @@ services:
     container_name: argyle
     build: .
     volumes:
-      - .:/usr/src/app
-
+      - .:/app

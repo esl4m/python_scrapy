@@ -1,10 +1,12 @@
 FROM python:3
 
-WORKDIR /usr/src/app
+RUN mkdir /app
+WORKDIR /app
 
-COPY requirements.txt ./
-RUN pip3 install --no-cache-dir -r requirements.txt
+COPY requirements.txt /app
+RUN pip3 install -r requirements.txt
 
-COPY . .
+COPY . /app
 
-CMD [ "python3", "./go-spider.py" ]
+RUN [ "chmod +x run_me.sh" ]
+CMD [ "./run_me.sh" ]
